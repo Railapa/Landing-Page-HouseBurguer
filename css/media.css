@@ -1,0 +1,34 @@
+:root {
+    --bg-primary: #000000;
+
+    --accent-color: #CC5500;
+    --accent-color-secundary: ##A18C72;
+
+    --text-main: #FFFFFF;
+    --text-secondary: #E0E0E0;
+
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.1);
+
+    --font-primaria: "Inter", sans-serif;
+    --font-secundaria: "Playfair", serif;
+}
+
+@media (min-width:1024px){
+    header{
+        background-color: var(--bg-primary);
+    
+            .navbar{
+                background-color: var(--bg-primary);
+                display: flex;
+                flex-direction: row;
+                position: static;
+                justify-content: right;
+            }
+
+            button{
+                display: none;
+            }
+        
+    }
+}
