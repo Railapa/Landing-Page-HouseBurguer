@@ -17,6 +17,8 @@
 @media (min-width:1024px){
     header{
         background-color: var(--bg-primary);
+        border-bottom: 1px solid var(--accent-color);
+        padding: 3px 15px;
     
             .navbar{
                 background-color: var(--bg-primary);
@@ -24,6 +26,8 @@
                 flex-direction: row;
                 position: static;
                 justify-content: right;
+                border-bottom: none;
+                padding: 15px;
             }
 
             button{
