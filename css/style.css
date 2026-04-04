@@ -566,4 +566,37 @@ footer {
                 }
         }
     }
+
+    .footer_navegacao{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        grid-area: 20px;
+
+            .footer_navegacao_header{
+                h3{
+                    font-size: 1.2rem;
+                    font-family: var(--font-primaria);
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                }
+            }
+        
+            .footer_navegacao_links{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                font-family: var(--font-primaria);
+                color: var(--accent-secundary);
+
+                    a{
+                        text-decoration: none;
+                        color: var(--accent-secundary);
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+            }
+    }
 }
