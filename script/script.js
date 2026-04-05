@@ -5,15 +5,20 @@ btn_mobile.addEventListener('click', () => {
     navbar.classList.toggle('show')
 })
 
- const swiper = new Swiper('.meuCarrossel', {
+const swiper = new Swiper('.meuCarrossel', {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
-
+    grabCursor: true,
     pagination: {
         el: '.paginacao-carrossel',
         clickable: true,
     },
 
-    grabCursor: true,
+    breakpoints: {
+
+        1024: {
+            enabled: false, 
+        }
+    }
 })

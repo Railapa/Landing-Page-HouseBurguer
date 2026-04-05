@@ -66,20 +66,85 @@
         }
     }
 
-    .menu-header {
-        margin-top: 50px;
-
-        h2 {
+    .menu-header{
+        h2{
             font-size: 5rem;
         }
     }
 
     .menu_cards {
+        flex-direction: row !important;
         flex-wrap: wrap;
-        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+        width: 100%;
+    }
 
-        .menu_card {
-            width: 100vw;
+    .menu_cards .menu_card {
+        width: 30% !important;
+        min-width: 300px;
+        height: auto;
+    }
+
+    .menu_cardapio_completo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .avaliacoes_header{
+        h2{
+            font-size: 5rem !important;
         }
+    }
+
+    .meuCarrossel {
+        overflow: visible !important;
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+
+    .meuCarrossel .swiper-wrapper {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 20px;
+        transform: none !important; 
+        width: 100% !important;
+        cursor: auto !important;
+    }
+
+    .meuCarrossel .swiper-slide {
+        width: 80% !important;
+        height: auto !important;
+        margin: 0 !important; 
+    }
+
+    .paginacao-carrossel {
+        display: none !important;
+    }
+
+    .footer{
+        flex-direction: row;
+        padding: 0 50px;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+            .footer_header{
+                width: 350px;
+            }
+
+            .footer_navegacao{
+                margin-right: 100px;
+            }
+
+            .footer_horarios_dias{
+                gap: 40px;
+            }
+
+            .footer_contatos{
+                gap: 5px !important;
+            }
     }
 }
