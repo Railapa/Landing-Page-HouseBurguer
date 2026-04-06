@@ -15,9 +15,8 @@
 }
 
 @media (min-width:1024px) {
-    header {
+    .home {
         background-color: var(--bg-primary);
-        border-bottom: 1px solid var(--accent-color);
         padding: 3px 15px;
 
         .navbar {
