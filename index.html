@@ -78,7 +78,7 @@
         </div>
 
         <div class="menu_cards">
-            <div class="menu_card">
+            <div class="menu_card" id="menu_card" data-product="Classic Bacon">
                 <div class="menu_card_img">
                     <img src="./imagens/img-baconSupreme.jpg" alt="">
                 </div>
@@ -92,12 +92,12 @@
                         <h4>R$ 32</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button>+</button>
+                        <button id="btn_mais" >+</button>
                     </div>
                 </div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card" id="menu_card" data-product="Double Smash">
                 <div class="menu_card_img">
                     <img src="./imagens/img-hambuerguerduplo.jpg" alt="">
                 </div>
@@ -111,12 +111,12 @@
                         <h4>R$ 38</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button>+</button>
+                        <button id="btn_mais" >+</button>
                     </div>
                 </div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card" id="menu_card" data-product="Cheese Explosion">
                 <div class="menu_card_img">
                     <img src="./imagens/img-hambuerguerDuploCheddar.jpg" alt="">
                 </div>
@@ -130,12 +130,12 @@
                         <h4>R$ 35</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button>+</button>
+                        <button id="btn_mais" >+</button>
                     </div>
                 </div>
             </div>
 
-            <div class="menu_card">
+            <div class="menu_card" id="menu_card" data-product="Premium Gorgonzola">
                 <div class="menu_card_img">
                     <img src="./imagens/img-hambuerguer-gorgonzola.jpg" alt="">
                 </div>
@@ -149,7 +149,7 @@
                         <h4>R$ 40</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button>+</button>
+                        <button id="btn_mais" >+</button>
                     </div>
                 </div>
             </div>
@@ -313,6 +313,24 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal_menu" id="modal_menu">
+        <div class="conteudo_modal" id="conteudo_modal">
+            <button id="close-modal" class="close-btn">&times;</button>
+
+            <img class="modal_img" id="modal_img" src="" alt="">
+
+            <h2 id="modal_titulo">Nome do Produto</h2>
+
+            <div class="modal_info" id="modal_info">
+                <p><strong>Descrição: </strong> <span id="modal_descricao"></span></p>
+                 <p><strong>Calorias: </strong> <span id="modal_calorias"></span></p>
+                 <p><strong>Ingredientes: </strong> <span id="modal_ingredientes"></span></p>
+                 <p><strong>Preço: </strong> <span id="modal_preco"></span></p>
+                 <p><strong>Combos: </strong> <span id="modal_combos"></span></p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
 </body>
