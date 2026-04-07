@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header id="home" class="home">
+    <header id="home" class="home hidden">
         <div class="logo">
             <a href="#apresentacao">
                 <img src="./imagens/logo.png" alt="">
@@ -33,7 +33,7 @@
         </button>
     </header>
 
-    <main class="apresentacao" id="apresentacao">
+    <main class="apresentacao hidden" id="apresentacao">
         <div class="apresentacao-header">
             <h1>
                 Sabor que <span class="texto_destaque">Transcende</span>
@@ -51,7 +51,7 @@
 
             <div class="apresentacao_botoes">
                 <a class="link_pedido" href="https://wa.me/telefone" target="_blank">Fazer Pedido</a>
-                <a class="link_menu" href="">Explorar Menu</a>
+                <a class="link_menu" href="#menu">Explorar Menu</a>
             </div>
         </div>
 
@@ -71,7 +71,7 @@
         </div>
     </main>
 
-    <section class="sobre">
+    <section class="sobre hidden" id="sobre">
         <div class="sobre_header">
             <h2>Sobre <span>Nós</span></h2>
         </div>
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section class="menu" id="menu">
+    <section class="menu hidden" id="menu">
         <div class="menu-header">
             <h2>Nosso <span class="texto_destaque">Menu</span></h2>
             <p>Criações exclusivas que elevam a experiência gastronômica</p>
@@ -115,7 +115,7 @@
                         <h4>R$ 32</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais">+</button>
+                        <button id="btn_mais" class="btn_mais">+</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                         <h4>R$ 40</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais">+</button>
+                        <button id="btn_mais" class="btn_mais">+</button>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                         <h4>R$ 38</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais">+</button>
+                        <button id="btn_mais" class="btn_mais">+</button>
                     </div>
                 </div>
             </div>
@@ -172,18 +172,36 @@
                         <h4>R$ 34</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais">+</button>
+                        <button id="btn_mais" class="btn_mais">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card item-extra" data-product="Classic Bacon Jr" style="display: none;">
+                <div class="menu_card_img">
+                    <img src="./imagens/img-baconSupreme.jpg" alt="">
+                </div>
+                <div class="menu_card_header">
+                    <h3>Classic Bacon Jr</h3>
+                    <p>Versão compacta com o mesmo sabor defumado.</p>
+                </div>
+                <div class="menu_card_detalhes">
+                    <div class="menu_card_detalhes_preco">
+                        <h3>A partir de</h3>
+                        <h4>R$ 35</h4>
+                    </div>
+                    <div class="menu_card_detalhes_mais">
+                        <button class="btn_mais" class="btn_mais">+</button>
                     </div>
                 </div>
             </div>
 
             <div class="menu_cardapio_completo">
-                <a href="">Ver Menu Completo</a>
+                <a href="menu.html" target="_blank">Ver Menu Completo</a>
             </div>
         </div>
     </section>
 
-    <section class="avaliacoes" id="avaliacoes">
+    <section class="avaliacoes hidden" id="avaliacoes">
         <div class="avaliacoes_header">
             <h2>Experiências <span class="texto_destaque">Memoráveis</span></h2>
             <p>Depoimentos autênticos de quem vivenciou nossa proposta</p>
@@ -276,7 +294,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer_header">
             <h2>Burger House</h2>
             <p>Experiências gastronômicas que transcendem o ordinário. Artesanal, premium, autêntico.</p>
@@ -329,15 +347,15 @@
                 <h3>Navegação</h3>
             </div>
             <div class="footer_navegacao_links">
-                <a href="">Menu Completo</a>
-                <a href="">Nossa História</a>
+                <a href="menu.html">Menu Completo</a>
+                <a href="#sobre">Nossa História</a>
                 <a href="https://wa.me/telefone" target="_blank">Fazer Pedido</a>
                 <a href="https://wa.me/telefone" target="_blank">Delivery</a>
             </div>
         </div>
     </footer>
 
-    <div class="modal_menu" id="modal_menu">
+    <div class="modal_menu hidden" id="modal_menu">
         <div class="conteudo_modal" id="conteudo_modal">
             <button id="close-modal" class="close-btn">&times;</button>
 
