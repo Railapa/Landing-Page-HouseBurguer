@@ -25,7 +25,7 @@
             <a href="#apresentacao">Início</a>
             <a href="#menu">Nosso Menu</a>
             <a href="#avaliacoes">Avaliações</a>
-            <a class="linkPedido" id="linkPedido" href="#pedido">Fazer Pedido</a>
+            <a class="linkPedido" id="linkPedido" href="https://wa.me/telefone" target="_blank">Fazer Pedido</a>
         </nav>
 
         <button class="btn btn_mobile" id="btn_mobile">
@@ -50,7 +50,7 @@
             </div>
 
             <div class="apresentacao_botoes">
-                <a class="link_pedido" href="">Fazer Pedido</a>
+                <a class="link_pedido" href="https://wa.me/telefone" target="_blank">Fazer Pedido</a>
                 <a class="link_menu" href="">Explorar Menu</a>
             </div>
         </div>
@@ -70,6 +70,29 @@
             </div>
         </div>
     </main>
+
+    <section class="sobre">
+        <div class="sobre_header">
+            <h2>Sobre <span>Nós</span></h2>
+        </div>
+
+        <div class="sobre_descricao">
+            <div class="sobre_img">
+                <img src="./imagens/logo.png" alt="">
+            </div>
+
+            <div class="sobre_texto">
+                <p>A House Burguer nasceu de um desejo simples, mas ambicioso: elevar o hambúrguer artesanal ao nível da
+                    alta gastronomia. Não acreditamos em atalhos. Acreditamos no tempo da fermentação natural do nosso
+                    pão brioche, na seleção rigorosa de carnes Black Angus e na alquimia de criar molhos que contam
+                    histórias.
+
+                    Nossa jornada começou com a busca pelo blend perfeito, resultando em receitas exclusivas que hoje
+                    atendem a mais de 500 clientes satisfeitos. Aqui, cada pedido não é apenas uma refeição, é o
+                    resultado de anos de dedicação à técnica e ao respeito pelos ingredientes nobres.</p>
+            </div>
+        </div>
+    </section>
 
     <section class="menu" id="menu">
         <div class="menu-header">
@@ -92,26 +115,26 @@
                         <h4>R$ 32</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais" >+</button>
+                        <button id="btn_mais">+</button>
                     </div>
                 </div>
             </div>
 
-            <div class="menu_card" id="menu_card" data-product="Double Smash">
+            <div class="menu_card" id="menu_card" data-product="Double Royal">
                 <div class="menu_card_img">
                     <img src="./imagens/img-hambuerguerduplo.jpg" alt="">
                 </div>
                 <div class="menu_card_header">
-                    <h3>Double Smash</h3>
-                    <p>Dois smash burgers, queijo americano, cebola caramelizada</p>
+                    <h3>Double Royal</h3>
+                    <p>Blend bovino 180g, queijo coalho grelhado, pepperoni selado e creme de queijos finos.</p>
                 </div>
                 <div class="menu_card_detalhes">
                     <div class="menu_card_detalhes_preco">
                         <h3>A partir de</h3>
-                        <h4>R$ 38</h4>
+                        <h4>R$ 40</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais" >+</button>
+                        <button id="btn_mais">+</button>
                     </div>
                 </div>
             </div>
@@ -127,29 +150,29 @@
                 <div class="menu_card_detalhes">
                     <div class="menu_card_detalhes_preco">
                         <h3>A partir de</h3>
-                        <h4>R$ 35</h4>
+                        <h4>R$ 38</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais" >+</button>
+                        <button id="btn_mais">+</button>
                     </div>
                 </div>
             </div>
 
-            <div class="menu_card" id="menu_card" data-product="Premium Gorgonzola">
+            <div class="menu_card" id="menu_card" data-product="Gorgon Prime">
                 <div class="menu_card_img">
                     <img src="./imagens/img-hambuerguer-gorgonzola.jpg" alt="">
                 </div>
                 <div class="menu_card_header">
-                    <h3>Premium Gorgonzola</h3>
+                    <h3>Gorgon Prime</h3>
                     <p>Hambúrguer suculento com bacon crocante e gorgonzola derretido</p>
                 </div>
                 <div class="menu_card_detalhes">
                     <div class="menu_card_detalhes_preco">
                         <h3>A partir de</h3>
-                        <h4>R$ 40</h4>
+                        <h4>R$ 34</h4>
                     </div>
                     <div class="menu_card_detalhes_mais">
-                        <button id="btn_mais" >+</button>
+                        <button id="btn_mais">+</button>
                     </div>
                 </div>
             </div>
@@ -308,8 +331,8 @@
             <div class="footer_navegacao_links">
                 <a href="">Menu Completo</a>
                 <a href="">Nossa História</a>
-                <a href="">Fazer Pedido</a>
-                <a href="">Delivery</a>
+                <a href="https://wa.me/telefone" target="_blank">Fazer Pedido</a>
+                <a href="https://wa.me/telefone" target="_blank">Delivery</a>
             </div>
         </div>
     </footer>
@@ -324,10 +347,10 @@
 
             <div class="modal_info" id="modal_info">
                 <p><strong>Descrição: </strong> <span id="modal_descricao"></span></p>
-                 <p><strong>Calorias: </strong> <span id="modal_calorias"></span></p>
-                 <p><strong>Ingredientes: </strong> <span id="modal_ingredientes"></span></p>
-                 <p><strong>Preço: </strong> <span id="modal_preco"></span></p>
-                 <p><strong>Combos: </strong> <span id="modal_combos"></span></p>
+                <p><strong>Calorias: </strong> <span id="modal_calorias"></span></p>
+                <p><strong>Ingredientes: </strong> <span id="modal_ingredientes"></span></p>
+                <p><strong>Preço: </strong> <span id="modal_preco"></span></p>
+                <p><strong>Combos: </strong> <span id="modal_combos"></span></p>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 section {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 100px;
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-    --bg-primary: #000000;
+    --bg-primary: #202020;
 
     --accent-color: #CC5500;
     --accent-secundary: #A18C72;
@@ -216,6 +216,53 @@ main {
         i {
             font-size: 20px;
         }
+    }
+}
+
+.sobre {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+    background-color: #121212;
+
+    .sobre_header {
+        font-size: 2.2rem;
+        font-family: var(--font-secundaria);
+
+        span {
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-weight: 800;
+        }
+    }
+
+    .sobre_descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 50px;
+
+        p {
+            font-family: var(--font-primaria);
+            line-height: 24px;
+        }
+    }
+
+    .sobre_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre_img img {
+        width: 55%;
     }
 }
 
@@ -557,61 +604,61 @@ footer {
             }
         }
 
-        .footer_contatos_telefone{
+        .footer_contatos_telefone {
             display: flex;
             flex-direction: column;
             gap: 10px;
             margin-top: 20px;
 
-                h4{
-                    font-family: var(--font-primaria);
-                    text-transform: uppercase;
-                    color: var(--accent-secundary);
-                    font-weight: 400;
-                    letter-spacing: 3px;
-                }
+            h4 {
+                font-family: var(--font-primaria);
+                text-transform: uppercase;
+                color: var(--accent-secundary);
+                font-weight: 400;
+                letter-spacing: 3px;
+            }
 
-                p{
-                    font-family: var(--font-primaria);
-                }
+            p {
+                font-family: var(--font-primaria);
+            }
         }
     }
 
-    .footer_navegacao{
+    .footer_navegacao {
         margin-top: 80px;
         display: flex;
         flex-direction: column;
         grid-area: 20px;
 
-            .footer_navegacao_header{
-                h3{
-                    font-size: 1.2rem;
-                    font-family: var(--font-primaria);
-                    text-transform: uppercase;
-                    margin-bottom: 30px;
-                }
-            }
-        
-            .footer_navegacao_links{
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
+        .footer_navegacao_header {
+            h3 {
+                font-size: 1.2rem;
                 font-family: var(--font-primaria);
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+        }
+
+        .footer_navegacao_links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-family: var(--font-primaria);
+            color: var(--accent-secundary);
+
+            a {
+                text-decoration: none;
                 color: var(--accent-secundary);
 
-                    a{
-                        text-decoration: none;
-                        color: var(--accent-secundary);
-
-                        &:hover{
-                            text-decoration: underline;
-                        }
-                    }
+                &:hover {
+                    text-decoration: underline;
+                }
             }
+        }
     }
 }
 
-.modal_menu{
+.modal_menu {
     display: none;
     background-color: var(--bg-primary);
     width: 100%;
@@ -623,51 +670,54 @@ footer {
     left: 0;
     z-index: 1002;
     padding: 20px;
+    transition: all 0.5s ease;
 
-        .conteudo_modal{
-            border-radius: 20px;
-            padding: 20px;
-            background-color: #1f1f1f;
-            width: 50vw;
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 50px;
-            font-family: var(--font-primaria);
-            overflow: auto;
-            position: relative;
-            text-align: left;
-        }
+    .conteudo_modal {
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #292929;
+        width: 80vw;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        font-family: var(--font-primaria);
+        overflow: auto;
+        position: relative;
+        text-align: left;
+    }
 
-        .modal_img {
-            width: 300px;
-            height: auto;
-        }
+    .modal_img {
+        width: 250px;
+        border-radius: 8px;
+        height: 250px;
+        margin-top: 28px;
+    }
 
-        #modal_titulo{
-            font-family: var(--font-secundaria);
-            font-weight: 700;
-            font-size: 2.5rem;
-            margin-top: 20px;
-        }
+    #modal_titulo {
+        font-family: var(--font-secundaria);
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
 
-        .modal_info{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+    .modal_info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-        .close-btn {
-            position: absolute;
-            top: 0;
-            right: 15px;
-            background: none;
-            border: none;
-            font-size: 2.5rem;
-            cursor: pointer;
-            color: var(--text-main);
-        }
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: var(--text-main);
+    }
 }
 
 /* Garante que a modal apareça sobre tudo e centralize o conteúdo */

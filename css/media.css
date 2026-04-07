@@ -65,8 +65,8 @@
         }
     }
 
-    .menu-header{
-        h2{
+    .menu-header {
+        h2 {
             font-size: 5rem;
         }
     }
@@ -92,8 +92,8 @@
         justify-content: center;
     }
 
-    .avaliacoes_header{
-        h2{
+    .avaliacoes_header {
+        h2 {
             font-size: 5rem !important;
         }
     }
@@ -109,7 +109,7 @@
         flex-direction: row !important;
         justify-content: center !important;
         gap: 20px;
-        transform: none !important; 
+        transform: none !important;
         width: 100% !important;
         cursor: auto !important;
     }
@@ -117,33 +117,65 @@
     .meuCarrossel .swiper-slide {
         width: 80% !important;
         height: auto !important;
-        margin: 0 !important; 
+        margin: 0 !important;
     }
 
     .paginacao-carrossel {
         display: none !important;
     }
 
-    .footer{
+    .footer {
         flex-direction: row;
         padding: 0 50px;
         justify-content: space-between;
         margin-bottom: 60px;
 
-            .footer_header{
-                width: 350px;
-            }
+        .footer_header {
+            width: 350px;
+        }
 
-            .footer_navegacao{
-                margin-right: 100px;
-            }
+        .footer_navegacao {
+            margin-right: 100px;
+        }
 
-            .footer_horarios_dias{
-                gap: 40px;
-            }
+        .footer_horarios_dias {
+            gap: 40px;
+        }
 
-            .footer_contatos{
-                gap: 5px !important;
-            }
+        .footer_contatos {
+            gap: 5px !important;
+        }
+    }
+
+    .modal_img {
+        width: 450px !important;
+        border-radius: 8px;
+        height: 450px !important;
+    }
+
+    .conteudo_modal {
+        width: 50vw !important;
+    }
+
+    .sobre_header h2 {
+        font-size: 5rem !important;
+    }
+
+    .sobre_descricao {
+        flex-direction: row-reverse !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 100px;
+
+        .sobre_texto {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .sobre_img img {
+            width: 400px;
+        }
     }
 }
